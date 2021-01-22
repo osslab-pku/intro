@@ -20,3 +20,7 @@ The following are general research advice that I found very helpful (adopted fro
 This article provide a thorough introduction for all kind of software engineering research paradigms.
 
 * Stol, Klaas-Jan, and Brian Fitzgerald. "The ABC of software engineering research." ACM Transactions on Software Engineering and Methodology (TOSEM) 27.3 (2018): 1-51.
+
+## Specific Research Advice for our Research Area
+
+See this [documentation](intro4OSSlab.docx).

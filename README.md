@@ -116,20 +116,23 @@
 
 * 定性分析：interviews, surveys, open coding, thematic analysis
 
-## 推荐文献
+## 推荐阅读
 
 ### 领域科普文章
 
-1. 周明辉, 郭长国. 基于大数据的软件工程新思维.  中国计算机学会通讯. 第十卷第3期. 2014年3月.
-2. 周明辉, 张伟等. 开源软件的量化分析.中国计算机学会通讯. 第十二卷第2期. 2016年2月.
+
+
+1. Frederick Brooks. *No silver bullet*. April, 1987.
+2. 周明辉, 郭长国. 基于大数据的软件工程新思维.  中国计算机学会通讯. 第十卷第3期. 2014年3月.
+3. 周明辉, 张伟等. 开源软件的量化分析.中国计算机学会通讯. 第十二卷第2期. 2016年2月.
 
 注解：以上两篇文章似乎网上找不到，得找周老师要
 
 ### 领域早期工作
 
 1. Mockus, Audris, Roy T. Fielding, and James D. Herbsleb. "Two case studies of open source software development: Apache and Mozilla." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 11.3 (2002): 309-346.
-2. Herbsleb, James D., and Audris Mockus. "An empirical study of speed and communication in globally distributed software development." *IEEE Transactions on software engineering* 29.6 (2003): 481-494.
-3. Mockus, Audris, and David M. Weiss. "Globalization by chunking: a quantitative approach." *IEEE software* 18.2 (2001): 30-37.
+2. Herbsleb, James D., and Audris Mockus. "An empirical study of speed and communication in globally distributed software development." *IEEE Transactions on Software Engineering* 29.6 (2003): 481-494.
+3. Mockus, Audris, and David M. Weiss. "Globalization by chunking: a quantitative approach." *IEEE Software* 18.2 (2001): 30-37.
 
 注解：使用数据探索开源开发和全球分布式开发是本领域的开拓性工作(也是读起来有美感的论文)，需要尤其关注其研究问题和研究方法及其跟软件开发效率和质量的关系。（By Hao：我觉得还可以添加一些经典文章？比如no silver bullet之类的)
 
@@ -137,7 +140,7 @@
 
 #### 软件项目如何吸引和指导新人
 
-1. Zhou, Minghui, and Audris Mockus. "Developer fluency: Achieving true mastery in software projects." *Proceedings of the eighteenth ACM SIGSOFT international symposium on Foundations of software engineering*. 2010.
+1. Zhou, Minghui, and Audris Mockus. "Developer fluency: Achieving true mastery in software projects." *Proceedings of the eighteenth ACM SIGSOFT International Symposium on Foundations of Software Engineering*. 2010.
 2. Zhou, Minghui, and Audris Mockus. "What make long term contributors: Willingness and opportunity in OSS community." *2012 34th International Conference on Software Engineering (ICSE)*. IEEE, 2012.
 3. Zhou, Minghui, and Audris Mockus. "Who will stay in the floss community? modeling participant’s initial behavior." *IEEE Transactions on Software Engineering* 41.1 (2014): 82-99.
 4. Zhou, Minghui, et al. "Inflow and retention in OSS communities with commercial involvement: A case study of three hybrid projects." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 25.2 (2016): 1-29.

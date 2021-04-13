@@ -120,6 +120,7 @@
 
 1. 周明辉, 郭长国. 基于大数据的软件工程新思维.  中国计算机学会通讯. 第十卷第3期. 2014年3月.
 2. 周明辉, 张伟等. 开源软件的量化分析.中国计算机学会通讯. 第十二卷第2期. 2016年2月.
+3. 周明辉，张宇霞，谭鑫. 软件数字社会学. 中国科学信息科学. 49(11). 1399-1411.
 
 注解：以上两篇文章似乎网上找不到，得找周老师要
 
@@ -129,7 +130,7 @@
 2. Herbsleb, James D., and Audris Mockus. "An empirical study of speed and communication in globally distributed software development." *IEEE Transactions on software engineering* 29.6 (2003): 481-494.
 3. Mockus, Audris, and David M. Weiss. "Globalization by chunking: a quantitative approach." *IEEE software* 18.2 (2001): 30-37.
 
-注解：使用数据探索开源开发和全球分布式开发是本领域的开拓性工作(也是读起来有美感的论文)，需要尤其关注其研究问题和研究方法及其跟软件开发效率和质量的关系。（By Hao：我觉得还可以添加一些经典文章？比如no silver bullet之类的)
+注解：使用数据探索开源开发和全球分布式开发是本领域的开拓性工作(也是读起来有美感的论文)，需要尤其关注其研究问题和研究方法及其跟软件开发效率和质量的关系。（By Hao：我觉得还可以添加一些经典文章？比如no silver bullet之类的. By minghui: Absolutely, you could add that.)
 
 ### 组内主要工作
 
@@ -138,10 +139,9 @@
 1. Zhou, Minghui, and Audris Mockus. "Developer fluency: Achieving true mastery in software projects." *Proceedings of the eighteenth ACM SIGSOFT international symposium on Foundations of software engineering*. 2010.
 2. Zhou, Minghui, and Audris Mockus. "What make long term contributors: Willingness and opportunity in OSS community." *2012 34th International Conference on Software Engineering (ICSE)*. IEEE, 2012.
 3. Zhou, Minghui, and Audris Mockus. "Who will stay in the floss community? modeling participant’s initial behavior." *IEEE Transactions on Software Engineering* 41.1 (2014): 82-99.
-4. Zhou, Minghui, et al. "Inflow and retention in OSS communities with commercial involvement: A case study of three hybrid projects." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 25.2 (2016): 1-29.
-5. Tan, Xin, Minghui Zhou, and Zeyu Sun. "A first look at good first issues on GitHub." *Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering*. 2020.
+4. Tan, Xin, Minghui Zhou, and Zeyu Sun. "A first look at good first issues on GitHub." *Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering*. 2020.
 
-#### Linux社区中的代码提交
+#### Linux社区：代码提交实践和社区可扩展性
 
 1. Zhou, Minghui, et al. "On the scalability of Linux kernel maintainers' work." *Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering*. 2017.
 2. Xu, Yulin, and Minghui Zhou. "A multi-level dataset of Linux kernel patchwork." *2018 IEEE/ACM 15th International Conference on Mining Software Repositories (MSR)*. IEEE, 2018.
@@ -150,16 +150,23 @@
 
 #### 开源项目中的公司参与
 
-1. Zhang, Yuxia, et al. "Companies' domination in FLOSS development: an empirical study of OpenStack." *Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings*. 2018.
-2. Zhang, Yuxia, et al. "Companies' Participation in OSS Development-An Empirical Study of OpenStack." *IEEE Transactions on Software Engineering* (2019).
-3. Zhang, Yuxia, et al. "How Do Companies Collaborate in Open Source Ecosystems? An Empirical Study of OpenStack." *2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE)*. IEEE, 2020.
+1. Zhou, Minghui, et al. "Inflow and retention in OSS communities with commercial involvement: A case study of three hybrid projects." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 25.2 (2016): 1-29.
+2. Zhang, Yuxia, et al. "Companies' domination in FLOSS development: an empirical study of OpenStack." *Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings*. 2018.
+3. Zhang, Yuxia, et al. "Companies' Participation in OSS Development-An Empirical Study of OpenStack." *IEEE Transactions on Software Engineering* (2019).
+4. Zhang, Yuxia, et al. "How Do Companies Collaborate in Open Source Ecosystems? An Empirical Study of OpenStack." *2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE)*. IEEE, 2020.
+
+#### 软件依赖/开源供应链
+
+1. He, Hao, et al. MigrationAdvisor: Recommending Library Migrations from Large-Scale Open-Source Data. ICSE'2021 Tool Demo.
+2. He, Hao, et al. ...
 
 #### 正在进行的课题（2021.04）
 
 1. **SE for AI**：
    1. 开发者在应用深度学习时遇到的困难？
    2. 深度学习框架的API演化情况？开发者在不同深度学习框架之间的流动情况？
-2. **软件供应链**：
+   3. 不同深度学习框架的比较：技术/应用演化和未来
+2. **(开源)软件供应链**：
    1. 什么因素会影响一个软件包的下游项目数量？
    2. 如何消解软件供应链上的安全漏洞？
    3. 相似软件包之间的迁移情况是什么样的？
@@ -172,3 +179,5 @@
    5. 现有静态分析工具的使用情况？有没有改进点？
 
 注解：组内工作(程序员、制品及环境的关系):我们组目前的代表工作在于研究程序员、制品及环境的关系(跟组长个人意趣有关)。研究对象从个体(成熟度、学习途径、环境影响)到群体(项目最佳实践)，到生态(可持续性、可演化性)。
+
+贡献者：何昊，周明辉，...

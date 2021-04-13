@@ -53,9 +53,9 @@
 
 我们实验室长期而来一直聚焦于在软件工程领域进行**发现型**的研究。为什么软件工程领域需要发现型的研究，而不仅仅是去开发算法、系统与工具呢？第一个原因是，软件开发虽然以数学作为理论基础，并由计算机技术加以支撑，但是**归根结底还是人的活动**。比如说，开发一个软件不仅需要**人**与**技术**进行**极其复杂而又不能出错的交互**；也需要**人**与**人**之间进行**交流**与**组织**；还需要降低技术的**门槛**（例如控制代码的复杂度、编写技术文档等），使得不那么聪明的人也能参与软件开发。由于我们对人类智能的有限认识，这些问题是难以采用数学的方法去解决的，需要通过对历史事件的分析与反思，反复迭代得到最优的解决方案。第二个原因是，真实的软件开发场景极端复杂，很多问题也不太可能存在一个通用的解决方案(Silver Bullet)，使得**定义合适的技术问题本身就不太容易**，需要科学的证据和观点加以支持。因此，如果没有发现型的研究对**软件工程研究**和**软件开发实践**做出科学的指导，人们可能会在伪技术问题上浪费时间，拍脑袋的管理决策也可能会产生非常可怕的后果。感兴趣的读者可以看一看《人月神话》这本书，了解上世纪60年代IBM开发操作系统时遇到的各种问题。同时期的著名计算机科学家Edsger W. Dijkstra曾经这么评论过当时的“软件工程”：
 
-> The required techniques of effective reasoning are pretty formal, but as long as programming is done by people that don't master them, the software crisis will remain with us and will be considered an incurable disease. And you know what incurable diseases do: they invite the quacks and charlatans in, who in this case take the form of Software Engineering gurus. (人话版翻译：写软件需要很高的姿势水平。但是，写软件的人一般都是傻Ｘ，因此开发大型复杂软件永远都会很困难。这种困难，总是会引来另一帮自称为“软件工程”布道师的傻Ｘ。)
+> The required techniques of effective reasoning are pretty formal, but as long as programming is done by people that don't master them, the software crisis will remain with us and will be considered an incurable disease. And you know what incurable diseases do: they invite the quacks and charlatans in, who in this case take the form of Software Engineering gurus. (人话版翻译：写代码需要很高的姿势水平。但是，写代码的人一般都是傻Ｘ，因此开发软件永远都会很困难。这种困难，总是会引来另一帮“软件工程”布道师，在那里发表一些too young too simple的言论。)
 
-当然，随着软件行业近六十年的发展，现在我们已经没有所谓的“软件危机”，倒不如说处在一个天才们惊呼“傻Ｘ竟然也能开发软件”的时代。借助各种软件开发工具和成熟开源生态系统的支持，从小学生到北大青鸟速成班学员，都能在很短的时间内写出实际可用的应用程序。
+当然，随着软件行业近六十年的发展，现在我们已经没有所谓的“软件危机”，倒不如说处在一个天才们惊呼“傻Ｘ竟然也能开发软件”的时代。借助各种软件开发工具和成熟开源生态系统的支持，从小学生到北大青鸟速成班学员，都能在很短的时间内写出实际可用的应用程序。软件行业能走到今天，终究离不开众多软件行业实践者和软件工程研究人员的共同努力。
 
 为了进行发现型的研究，需要采用某种研究范式。发现型研究有很多常用的研究范式，比如实地调研(Field Study)、实验室实验、计算机模拟等等，关于这些范式的详细介绍可以参考上一个表格的出处文章。然而，出于领域的特点，目前大多数软件工程领域的发现型研究都属于**实地调研**，而且主要是通过**观测已有的软件开发活动数据**，或者通过**访谈/发问卷调查相关的人员**来完成。控制变量实验相对较少见，主要原因在于软件开发的高成本和不可控性，使得这种实验不仅在成本上难以接受，也很难得到贴近现实的结果。由于软件开发活动不仅极端复杂还包含人类参与，基本没有采用计算机模拟来回答实际问题的研究。
 

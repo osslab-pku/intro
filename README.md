@@ -53,9 +53,9 @@
 
 我们实验室长期而来一直聚焦于在软件工程领域进行**发现型**的研究。为什么软件工程领域需要发现型的研究，而不仅仅是去开发算法、系统与工具呢？第一个原因是，软件开发虽然以数学作为理论基础，并由计算机技术加以支撑，但是**归根结底还是人的活动**。比如说，开发一个软件不仅需要**人**与**技术**进行**极其复杂而又不能出错的交互**；也需要**人**与**人**之间进行**交流**与**组织**；还需要降低技术的**门槛**（例如控制代码的复杂度、编写技术文档等），使得不那么聪明的人也能参与软件开发。由于我们对人类智能的有限认识，这些问题是难以采用数学的方法去解决的，需要通过对历史事件的分析与反思，反复迭代得到最优的解决方案。第二个原因是，真实的软件开发场景极端复杂，很多问题也不太可能存在一个通用的解决方案(Silver Bullet)，使得**定义合适的技术问题本身就不太容易**，需要科学的证据和观点加以支持。因此，如果没有发现型的研究对**软件工程研究**和**软件开发实践**做出科学的指导，人们可能会在伪技术问题上浪费时间，拍脑袋的管理决策也可能会产生非常可怕的后果。感兴趣的读者可以看一看《人月神话》这本书，了解上世纪60年代IBM开发操作系统时遇到的各种问题。同时期的著名计算机科学家Edsger W. Dijkstra曾经这么评论过当时的“软件工程”：
 
-> The required techniques of effective reasoning are pretty formal, but as long as programming is done by people that don't master them, the software crisis will remain with us and will be considered an incurable disease. And you know what incurable diseases do: they invite the quacks and charlatans in, who in this case take the form of Software Engineering gurus. (人话版翻译：写代码需要很高的姿势水平。但是，写代码的人一般都是傻Ｘ，因此开发软件永远都会很困难。这种困难，总是会引来另一帮“软件工程”布道师，在那里发表一些too young too simple的言论。)
+> The required techniques of effective reasoning are pretty formal, but as long as programming is done by people that don't master them, the software crisis will remain with us and will be considered an incurable disease. And you know what incurable diseases do: they invite the quacks and charlatans in, who in this case take the form of Software Engineering gurus. (翻译：写代码需要很高的姿势水平，可是写代码的人一般都是傻Ｘ，所以他们总是写不出好软件。总是写不出来，就会引来一帮“软件工程”砖家；但是砖家们的观点啊，都too young, too simple, sometimes naïve!)
 
-当然，随着软件行业近六十年的发展，现在我们已经没有所谓的“软件危机”，倒不如说处在一个天才们惊呼“傻Ｘ竟然也能开发软件”的时代。借助各种软件开发工具和成熟开源生态系统的支持，从小学生到北大青鸟速成班学员，都能在很短的时间内写出实际可用的应用程序。软件行业能走到今天，终究离不开众多软件行业实践者和软件工程研究人员的共同努力。
+当然，随着软件行业近六十年的发展，现在我们已经没有所谓的“软件危机”，倒不如说处在一个“傻Ｘ竟然也能开发软件”的时代。借助各种软件开发工具和成熟开源生态系统的支持，从小学生到北大青鸟速成班学员，都能在很短的时间内写出实际可用的应用程序。软件行业能走到今天，终究离不开众多软件行业实践者和软件工程研究人员的共同努力。
 
 为了进行发现型的研究，需要采用某种研究范式。发现型研究有很多常用的研究范式，比如实地调研(Field Study)、实验室实验、计算机模拟等等，关于这些范式的详细介绍可以参考上一个表格的出处文章。然而，出于领域的特点，目前大多数软件工程领域的发现型研究都属于**实地调研**，而且主要是通过**观测已有的软件开发活动数据**，或者通过**访谈/发问卷调查相关的人员**来完成。控制变量实验相对较少见，主要原因在于软件开发的高成本和不可控性，使得这种实验不仅在成本上难以接受，也很难得到贴近现实的结果。由于软件开发活动不仅极端复杂还包含人类参与，基本没有采用计算机模拟来回答实际问题的研究。
 
@@ -78,7 +78,7 @@
 
 之前提到，我们实验室的主要研究对象是**软件开发活动数据**。这是一个非常宽广的概念。一般而言，只要是在软件开发过程中产生的数据，都可以称作软件开发活动数据，包括但不限于
 
-* **Source Code**
+* **源代码(Source Code)**：对于开源软件而言，代码显然是最容易获取到的数据，也是最重要的基础数据。有研究可以仅仅观察源代码来总结开发者的使用模式，例如：开发者如何在Java中使用继承(Stevenson and Wood, ICSE 2018)？什么样的Python代码才是“Pythonic”的代码(Peng et al., SANER 2021)？等等。当然，更多的时候，源代码是作为基础数据，与其他数据相结合来回答各种复杂的问题，例如与版本控制数据相结合来研究代码重构，等等。
 * **Documentation**: Comment, API Documentation, Tutorial, Workflow Documentation, etc
 * **Configuration Files**: Dependency Config, CI/CD Config, Quality Assurance Config, etc
 * **Changes** and Documentation Accompanying Changes (in Version Control Systems): Commits, Releases, File Diffs, Commit Messages, Release Notes, etc
@@ -120,21 +120,22 @@
 
 ### 领域科普文章
 
+1. Brooks Jr, Frederick P. *No Silver Bullet – Essence and Accident in Software Engineering*. April, 1987.
+2. Brooks Jr, Frederick P. *The Mythical Man-Month: Essays on Software Engineering*. Pearson Education, 1995.
+3. 邹欣. 构建之法: 现代软件工程. 人民邮电出版社. 2017年6月.
+4. 周明辉, 郭长国. 基于大数据的软件工程新思维.  中国计算机学会通讯. 第十卷第3期. 2014年3月.
+5. 周明辉, 张伟等. 开源软件的量化分析.中国计算机学会通讯. 第十二卷第2期. 2016年2月.
+6. 周明辉, 张宇霞, 谭鑫. 软件数字社会学. 中国科学信息科学. 2019. 49(11). 1399-1411.
 
-
-1. Frederick Brooks. *No silver bullet*. April, 1987.
-2. 周明辉, 郭长国. 基于大数据的软件工程新思维.  中国计算机学会通讯. 第十卷第3期. 2014年3月.
-3. 周明辉, 张伟等. 开源软件的量化分析.中国计算机学会通讯. 第十二卷第2期. 2016年2月.
-
-注解：以上两篇文章似乎网上找不到，得找周老师要
+**注解：** [1] [2] 是软件工程早期的重要文献，[1] 最早阐述了“软件工程没有通用解决方案”的核心论点，可直接Google到全文；[2] 则记录了IBM在60年代组织开发System/360操作系统的经验教训，国内有中译版，但是翻译非常生硬，推荐寻找英文PDF原版阅读；[3] 是一本软件工程入门教材，可在网上买到，和其他教材相比，内容简短易懂，行文生动有趣，非常适合作为闲暇读物；[4] [5] [6] 是关于我们实验室研究领域的概述，可以发邮件找周老师获取。
 
 ### 领域早期工作
 
 1. Mockus, Audris, Roy T. Fielding, and James D. Herbsleb. "Two case studies of open source software development: Apache and Mozilla." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 11.3 (2002): 309-346.
 2. Herbsleb, James D., and Audris Mockus. "An empirical study of speed and communication in globally distributed software development." *IEEE Transactions on Software Engineering* 29.6 (2003): 481-494.
-3. Mockus, Audris, and David M. Weiss. "Globalization by chunking: a quantitative approach." *IEEE Software* 18.2 (2001): 30-37.
+3. Mockus, Audris, and David M. Weiss. "Globalization by chunking: A quantitative approach." *IEEE Software* 18.2 (2001): 30-37.
 
-注解：使用数据探索开源开发和全球分布式开发是本领域的开拓性工作(也是读起来有美感的论文)，需要尤其关注其研究问题和研究方法及其跟软件开发效率和质量的关系。（By Hao：我觉得还可以添加一些经典文章？比如no silver bullet之类的)
+注解：使用数据探索开源开发和全球分布式开发是本领域的开拓性工作(也是读起来有美感的论文)，需要尤其关注其研究问题和研究方法及其跟软件开发效率和质量的关系。
 
 ### 组内主要工作
 
@@ -143,29 +144,35 @@
 1. Zhou, Minghui, and Audris Mockus. "Developer fluency: Achieving true mastery in software projects." *Proceedings of the eighteenth ACM SIGSOFT International Symposium on Foundations of Software Engineering*. 2010.
 2. Zhou, Minghui, and Audris Mockus. "What make long term contributors: Willingness and opportunity in OSS community." *2012 34th International Conference on Software Engineering (ICSE)*. IEEE, 2012.
 3. Zhou, Minghui, and Audris Mockus. "Who will stay in the floss community? modeling participant’s initial behavior." *IEEE Transactions on Software Engineering* 41.1 (2014): 82-99.
-4. Zhou, Minghui, et al. "Inflow and retention in OSS communities with commercial involvement: A case study of three hybrid projects." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 25.2 (2016): 1-29.
-5. Tan, Xin, Minghui Zhou, and Zeyu Sun. "A first look at good first issues on GitHub." *Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering*. 2020.
+4. Tan, Xin, Minghui Zhou, and Zeyu Sun. "A first look at good first issues on GitHub." *Proceedings of the 28th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering*. 2020.
 
-#### Linux社区中的代码提交
+#### Linux社区：代码提交实践和社区可扩展性
 
 1. Zhou, Minghui, et al. "On the scalability of Linux kernel maintainers' work." *Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering*. 2017.
 2. Xu, Yulin, and Minghui Zhou. "A multi-level dataset of Linux kernel patchwork." *2018 IEEE/ACM 15th International Conference on Mining Software Repositories (MSR)*. IEEE, 2018.
 3. Tan, Xin, and Minghui Zhou. "How to communicate when submitting patches: An empirical study of the linux kernel." *Proceedings of the ACM on Human-Computer Interaction* 3.CSCW (2019): 1-26.
-4. Tan, Xin, and Minghui Zhou. "Scaling Open Source Software Communities: Challenges and Practices of Decentralization." *IEEE Software* (2020).
+4. Tan, Xin, and Minghui Zhou. "Scaling open source software communities: Challenges and practices of decentralization." *IEEE Software* (2020).
 
 #### 开源项目中的公司参与
 
-1. Zhang, Yuxia, et al. "Companies' domination in FLOSS development: an empirical study of OpenStack." *Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings*. 2018.
-2. Zhang, Yuxia, et al. "Companies' Participation in OSS Development-An Empirical Study of OpenStack." *IEEE Transactions on Software Engineering* (2019).
-3. Zhang, Yuxia, et al. "How Do Companies Collaborate in Open Source Ecosystems? An Empirical Study of OpenStack." *2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE)*. IEEE, 2020.
+1. Zhou, Minghui, et al. "Inflow and retention in OSS communities with commercial involvement: A case study of three hybrid projects." *ACM Transactions on Software Engineering and Methodology (TOSEM)* 25.2 (2016): 1-29.
+2. Zhang, Yuxia, et al. "Companies' domination in FLOSS development: An empirical study of OpenStack." *Proceedings of the 40th International Conference on Software Engineering: Companion Proceeedings*. 2018.
+3. Zhang, Yuxia, et al. "Companies' participation in OSS development: An empirical study of OpenStack." *IEEE Transactions on Software Engineering* (2019).
+4. Zhang, Yuxia, et al. "How do companies collaborate in open source ecosystems? An empirical study of OpenStack." *2020 IEEE/ACM 42nd International Conference on Software Engineering (ICSE)*. IEEE, 2020.
 
-#### 正在进行的课题（2021.04）
+#### 软件依赖/开源供应链
+
+1. Hao He, et al. A Multi-Metric Ranking Approach for Library Migration Recommendations. Proceedings of the 28th IEEE International Conference on Software Analysis, Evolution and Reengineering. 2021
+2. He, Hao, et al. MigrationAdvisor: Recommending Library Migrations from Large-Scale Open-Source Data. ICSE 2021 Tool Demo.
+
+## 正在进行的课题（2021.04）
 
 1. **SE for AI**：
    1. 开发者在应用深度学习时遇到的困难？
    2. 深度学习框架的API演化情况？开发者在不同深度学习框架之间的流动情况？
-2. **软件供应链**：
-   1. 什么因素会影响一个软件包的下游项目数量？
+   3. 不同深度学习框架的比较：技术/应用演化和未来
+2. **(开源)软件供应链**：
+   1. 什么因素会影响一个(深度学习)软件包的下游项目数量？
    2. 如何消解软件供应链上的安全漏洞？
    3. 相似软件包之间的迁移情况是什么样的？
    4. Dependabot等依赖管理工具的使用情况如何，有没有改进点？
@@ -174,6 +181,10 @@
    2. 新的检测代码与注释不一致的工具？
    3. 软件项目是如何组织和撰写Release Note的？
    4. 现有的Release Note生成工具的使用情况？有没有改进点？
-   5. 现有静态分析工具的使用情况？有没有改进点？
+   5. 现有代码静态分析工具的使用情况？有没有改进点？
 
 注解：组内工作(程序员、制品及环境的关系):我们组目前的代表工作在于研究程序员、制品及环境的关系(跟组长个人意趣有关)。研究对象从个体(成熟度、学习途径、环境影响)到群体(项目最佳实践)，到生态(可持续性、可演化性)。
+
+## 贡献者
+
+何昊，周明辉
